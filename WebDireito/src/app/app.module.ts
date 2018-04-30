@@ -11,6 +11,9 @@ import { UniNewsComponent } from './uni-news/uni-news.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { MundoJuridicoComponent } from './mundo-juridico/mundo-juridico.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { DicasJuridicasComponent } from './dicas-juridicas/dicas-juridicas.component';
+import { EventosComponent } from './eventos/eventos.component';
+import { DireitoArteComponent } from './direito-arte/direito-arte.component';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { AppRoutingModule } from './/app-routing.module';
     QuemSomosComponent,
     UniNewsComponent,
     SobreComponent,
-    MundoJuridicoComponent
+    MundoJuridicoComponent,
+    DicasJuridicasComponent,
+    EventosComponent,
+    DireitoArteComponent
   ],
   imports: [
     BrowserModule,
