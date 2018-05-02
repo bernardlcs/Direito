@@ -14,6 +14,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { DicasJuridicasComponent } from './dicas-juridicas/dicas-juridicas.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { DireitoArteComponent } from './direito-arte/direito-arte.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { DireitoArteComponent } from './direito-arte/direito-arte.component';
     MundoJuridicoComponent,
     DicasJuridicasComponent,
     EventosComponent,
-    DireitoArteComponent
+    DireitoArteComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

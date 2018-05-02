@@ -10,11 +10,13 @@ import { UniNewsComponent } from './uni-news/uni-news.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { DireitoArteComponent } from './direito-arte/direito-arte.component';
 import { DicasJuridicasComponent } from './dicas-juridicas/dicas-juridicas.component';
+import {HomeComponent} from "./home/home.component";
 
 
 const routes: Routes = [
 
-  { path: 'home', component: AppComponent },
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home', component: HomeComponent },
   { path: 'QuemSomos', component: QuemSomosComponent },
   { path: 'Sobre', component: SobreComponent },
   { path: 'MundoJuridico', component: MundoJuridicoComponent },
@@ -28,9 +30,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
   declarations: []
 })
 export class AppRoutingModule { }
