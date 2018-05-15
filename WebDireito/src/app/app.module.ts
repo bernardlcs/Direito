@@ -16,6 +16,11 @@ import { EventosComponent } from './eventos/eventos.component';
 import { DireitoArteComponent } from './direito-arte/direito-arte.component';
 import { HomeComponent } from './home/home.component';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+import { environment } from '../environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +39,9 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule, // for database
   ],
   providers: [],
   bootstrap: [AppComponent]
